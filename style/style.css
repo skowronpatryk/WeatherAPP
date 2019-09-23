@@ -659,7 +659,7 @@ main {
             RWD VERTICAL
 ************************************/
 
-@media (max-height: 600px) and (orientation: landscape) {
+@media (max-height: 400px) and (orientation: landscape) {
 
     .current_weather_container--location {
         font-size: 20px;
