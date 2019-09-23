@@ -682,7 +682,7 @@ main {
 
 }
 
-@media (min-height: 1000px) {
+@media (min-height: 1000px) and (orientation: landscape) {
     .current_weather_container {
         padding-top: 100px;
     }
