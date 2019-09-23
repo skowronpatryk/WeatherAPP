@@ -443,9 +443,13 @@ main {
         RESPONSIVE WEB DESIGN
 ************************************/
 
-@media (min-width: 300px) {
+@media (max-width: 575px) {
     .current_weather_container--location {
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .current_weather_container_temperature--summary {
+        font-size: 15px;
     }
 
     .weather-box {
@@ -471,6 +475,8 @@ main {
         margin: 0 auto;
     }
 }
+
+
 
 @media (min-width: 576px) {
 
