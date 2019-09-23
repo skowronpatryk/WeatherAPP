@@ -444,6 +444,10 @@ main {
 ************************************/
 
 @media (min-width: 300px) {
+    .current_weather_container--location {
+        font-size: 30px;
+    }
+
     .weather-box {
         font-size: 15px;
     }
@@ -469,6 +473,11 @@ main {
 }
 
 @media (min-width: 576px) {
+
+    .current_weather_container--location {
+        font-size: 30px;
+    }
+
     .current_weather_container {
         max-width: 400px;
         text-align: center;
@@ -650,7 +659,7 @@ main {
             RWD VERTICAL
 ************************************/
 
-@media (min-height: 375px) {
+@media (max-height: 600px) and (orientation: landscape) {
 
     .current_weather_container--location {
         font-size: 20px;
