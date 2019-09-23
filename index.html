@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PogodaNET - sprawdź pogodę na najbliższe dni</title>
+    <link rel="shortcut icon" href="./images/icons/favicon.png">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="description" content="Aplikacja pogodowa dla każdego - wejdź i sprawdź pogodę na najbliższe dni!">
+    <meta name="keywords" content="Aplikacja pogodowa, Pogoda, Na 7 dni, Na 14 dni">
+    <meta name="author" content="Patryk Skowron">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="lds-dual-ring center"></div>
+    <main hidden>
+        <button class="open-menu-btn">
+            <img src="./images/icons/menu.png" class="icon-sm-28" alt="Menu button">
+        </button>
+        <section class="current_weather_container">
+            <h1 class="current_weather_container--location"></h1>
+            <p class="current_weather_container_temperature--summary"></p>
+            <div class="current_weather_container_temperature">
+                <div>
+                    <img src="./images/temperature-icons/clear-day-white.png" alt="Słoneczny dzień" class="currentlyIcon display-none">
+                </div>
+                <div>
+                    <h1 class="current_weather_container_temperature--degrees"></h1>
+                </div>
+            </div>
+
+            <div class="current_weather_container_wind">
+                <div class="humidity-center">
+                    <div>
+                        <img src="./images/icons/humidity.png" class="icon-sm-30 display-none humidity-icon" alt="Wilgotność powietrza">
+                    </div>
+                    <div>
+                        <p class="humidity-event display-none">Wilgotność powietrza</p>
+                    </div>
+                    <div>
+                        <span class="current_weather_container_wind--desc"></span>
+                    </div>
+                </div>
+                <div class="wind-center">
+                    <div>
+                        <img src="./images/icons/wind-speed-flag.png" class="icon-sm-30 display-none wind-icon" alt="Prędkość wiatru">
+                    </div>
+                    <div>
+                        <p class="wind-event display-none">Prędkość wiatru</p>
+                    </div>
+                    <div>
+                        <span class="current_weather_container_wind--wind"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lower-panel display-none">
+            <button class="toggle-weather ripple center_x">
+                <img src="./images/icons/up-arrow.png" alt="Strzałka do góry">
+            </button>
+
+            <!-- Dzienny podział pogody -->
+            <div class="daily-weather-wrapper lower-panel-body">
+                <div class="weather-box display-none">
+                    <div>
+                        <h1 class="daily-weather-day"></h1>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <p class="daily-weather-degrees"></p>
+                        </div>
+                        <div>
+                            <img src="./images/temperature-icons/clear-day-white.png" class="icon-sm-30" alt="Słoneczny dzień" class="daily-weather-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Godzinowy podział pogody -->
+            <div class="hourly-weather-wrapper lower-panel-body" visible="false">
+                <div class="weather-box display-none">
+                    <div>
+                        <h1 class="hourly-weather-time"></h1>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <p class="hourly-weather-degrees"></p>              
+                        </div>
+                        <div>
+                            <img src="./images/temperature-icons/clear-day-grey.png" class="icon-sm-30" alt="Słoneczny dzień">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-container">
+            <button class="close-menu-btn ripple">
+                &#10006;
+            </button>
+            <div>
+                <div class="add-location-wrapper">
+                    <input type="text" placeholder="Lokalizacja" class="location-input">
+                    <br>
+                    <button class="location-button ripple" disabled>Dodaj miasto</button>
+                    <p>Aktualna lokalizacja</p>
+                    <h1 class="location-label"></h1>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
