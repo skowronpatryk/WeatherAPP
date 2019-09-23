@@ -127,7 +127,7 @@ main {
 
 .current_weather_container {
     width: 100%;
-    height: 60%;
+    height: 65%;
     position: relative;
     color: white;
     padding: 20px 30px 20px 30px;
@@ -216,7 +216,7 @@ main {
 
 .lower-panel {
     width: 100%;
-    height: 40%;
+    height: 35%;
     position: relative;
     color: white;
     font-size: 20px;
@@ -443,6 +443,31 @@ main {
         RESPONSIVE WEB DESIGN
 ************************************/
 
+@media (min-width: 300px) {
+    .weather-box {
+        font-size: 15px;
+    }
+
+    .icon-mobile {
+        width: 30px!important;
+    }
+
+    .daily-weather-day {
+        font-size: 15px!important;
+    }
+    .current_weather_container {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .weather-box {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 576px) {
     .current_weather_container {
         max-width: 400px;
@@ -469,6 +494,18 @@ main {
         max-width: 600px;
         text-align: center;
         margin: 0 auto;
+    }
+
+    .weather-box {
+        font-size: 20px;
+    }
+
+    .icon-mobile {
+        width: 50px!important;
+    }
+
+    .daily-weather-day {
+        font-size: 20px!important;
     }
 }
 
@@ -594,5 +631,17 @@ main {
     .menu-container {
         width: 20%;
         right: -20%
+    }
+
+    .weather-box {
+        font-size: 25px;
+    }
+
+    .icon-mobile {
+        width: 60px!important;
+    }
+
+    .daily-weather-day {
+        font-size: 25px!important;
     }
 }
