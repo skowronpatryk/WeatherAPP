@@ -489,6 +489,18 @@ main {
         text-align: center;
         margin: 0 auto;
     }
+
+    .icon-mobile {
+        width: 50px!important;
+    }
+
+    .daily-weather-day {
+        font-size: 20px!important;
+    }
+
+    .hourly-weather-time {
+        font-size: 20px!important;
+    }
 }
 
 @media (min-width: 700px) {
@@ -514,6 +526,10 @@ main {
     }
 
     .daily-weather-day {
+        font-size: 20px!important;
+    }
+
+    .hourly-weather-time {
         font-size: 20px!important;
     }
 }
@@ -651,6 +667,10 @@ main {
     }
 
     .daily-weather-day {
+        font-size: 25px!important;
+    }
+
+    .hourly-weather-time {
         font-size: 25px!important;
     }
 }
