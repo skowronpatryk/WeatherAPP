@@ -443,6 +443,35 @@ main {
         RESPONSIVE WEB DESIGN
 ************************************/
 
+@media (min-width: 300px) {
+    .current_weather_container--location {
+        font-size: 30px;
+    }
+
+    .weather-box {
+        font-size: 15px;
+    }
+
+    .icon-mobile {
+        width: 30px!important;
+    }
+
+    .daily-weather-day {
+        font-size: 15px!important;
+    }
+    .current_weather_container {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .weather-box {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 576px) {
 
     .current_weather_container--location {
@@ -462,7 +491,7 @@ main {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .current_weather_container {
         max-width: 600px;
         text-align: center;
@@ -626,7 +655,135 @@ main {
     }
 }
 
+@media (min-height: 800px) {
+    .current_weather_container {
+        padding-top: 100px;
+    }
+
+}
+
+@media (min-height: 1000px) {
+    .current_weather_container {
+        padding-top: 200px;
+    }
+
+    .current_weather_container--location {
+        font-size: 100px;
+    }
+
+    .current_weather_container_temperature--summary {
+        font-size: 30px;
+    }
+
+    .current_weather_container_temperature {
+        margin-bottom: 70px;
+    }
+
+    .humidity-icon {
+        width: 70px;
+    }
+
+    .wind-icon {
+        width: 70px;
+    }
+
+    .current_weather_container_wind--desc {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .current_weather_container_wind--wind {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .weather-box {
+        font-size: 30px;
+    }
+
+    .icon-mobile {
+        width: 55px!important;
+    }
+
+    .daily-weather-day {
+        font-size: 30px!important;
+    }
+
+    .hourly-weather-time {
+        font-size: 30px!important;
+    }
+
+
+
+}
+
 /* *********************************
             RWD VERTICAL
 ************************************/
-/*  DODANE WKRÓTCE */
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+    .current_weather_container--location {
+        font-size: 20px;
+    }
+
+    .current_weather_container_temperature--summary {
+        font-size: 15px;
+    }
+
+    .current_weather_container_temperature {
+        padding: 0 50px 0 50px;
+    }
+
+    .currentlyIcon {
+        width: 40px;
+    }
+
+    .current_weather_container_temperature--degrees {
+        font-size:40px;
+    }
+
+    .current_weather_container_wind {
+        padding: 0 50px 0 50px;
+        font-size: 10px;
+    }
+
+    .humidity-icon {
+        width: 20px;
+    }
+
+    .wind-icon {
+        width: 20px;
+    }
+
+    .current_weather_container_wind--desc {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .humidity-center {
+        margin-bottom: 10px;
+    }
+
+    .toggle-weather {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .current_weather_container_wind {
+        margin-top: 10px;
+    }
+
+    .current_weather_container_wind--wind {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .menu-container {
+        width: 40%;
+        right: -40%
+    }
+}
