@@ -443,35 +443,6 @@ main {
         RESPONSIVE WEB DESIGN
 ************************************/
 
-@media (min-width: 300px) {
-    .current_weather_container--location {
-        font-size: 30px;
-    }
-
-    .weather-box {
-        font-size: 15px;
-    }
-
-    .icon-mobile {
-        width: 30px!important;
-    }
-
-    .daily-weather-day {
-        font-size: 15px!important;
-    }
-    .current_weather_container {
-        max-width: 400px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .weather-box {
-        max-width: 400px;
-        text-align: center;
-        margin: 0 auto;
-    }
-}
-
 @media (min-width: 576px) {
 
     .current_weather_container--location {
